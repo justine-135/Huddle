@@ -1,0 +1,109 @@
+.section-bg {
+	display: grid;
+	grid-template-columns: 85%;
+	grid-template-rows: repeat(3, 36.75rem);
+	grid-gap: 2.8125rem;
+	justify-content: center;
+	padding: 4.375rem 0rem 16.9375rem 0rem;
+
+	@include desktop {
+		grid-template-columns: 90%;
+		grid-template-rows: repeat(3, 28rem);
+	}
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		box-shadow: 0rem 0rem 0.625rem rgba(128, 128, 128, 0.207);
+		border-radius: 1.875rem;
+
+		@include desktop {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.illustration {
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			margin: auto;
+		}
+
+		.text {
+			text-align: center;
+			margin: auto;
+
+			@include desktop {
+				text-align: left;
+				width: 65%;
+			}
+			h6 {
+				font-family: "Poppins", sans-serif;
+				font-weight: 600;
+				font-size: 1.75rem;
+				color: $darkCyan;
+			}
+			p {
+				margin: auto;
+				width: 76%;
+				padding-top: 1.8125rem;
+				font-size: 1rem;
+				line-height: 1.5;
+				color: $grayishBlue;
+				font-weight: 400;
+
+				@include desktop {
+					width: 100%;
+				}
+			}
+		}
+
+		&:first-child {
+			.illustration {
+				height: 14.75rem;
+				width: 17.857rem;
+				background-image: url("../images/illustration-grow-together.svg");
+
+				@include desktop {
+					order: 1;
+					width: 25.875rem;
+					height: 21.25rem;
+				}
+			}
+		}
+		&:nth-child(2) {
+			.illustration {
+				height: 13.25rem;
+				width: 18.375rem;
+				background-image: url("../images/illustration-flowing-conversation.svg");
+
+				@include desktop {
+					width: 26.25rem;
+					height: 18.9375rem;
+				}
+			}
+		}
+
+		&:last-child {
+			.illustration {
+				height: 16.625rem;
+				width: 18.75rem;
+				background-image: url("../images/illustration-your-users.svg");
+				@include desktop {
+					order: 1;
+					width: 26.625rem;
+					height: 20.375rem;
+				}
+			}
+
+			.text {
+				p {
+					width: 74%;
+
+					@include desktop {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,138 @@
+.footer-bg {
+	height: auto;
+	width: 100%;
+	background-color: $darkCyan;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 9.375rem;
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
+		width: 90%;
+		border-radius: 1.875rem;
+		background-color: white;
+		box-shadow: 0rem 0rem 0.625rem rgba(128, 128, 128, 0.207);
+		margin: auto;
+		transform: translateY(-60%);
+		padding: 3.25rem 0rem;
+		max-width: 50.3125rem;
+
+		h6 {
+			font-family: "Poppins", sans-serif;
+			font-weight: 600;
+			font-size: 1.3125rem;
+			color: #00252e;
+			text-align: center;
+
+			@include desktop {
+				font-size: 1.75rem;
+			}
+		}
+
+		button {
+			font-family: "Poppins", sans-serif;
+			font-weight: 600;
+			height: 3rem;
+			width: 15.25rem;
+			margin-top: 1.9375rem;
+			border-radius: 1.875rem;
+			border: none;
+			box-shadow: 0rem 0rem 0.625rem rgba(128, 128, 128, 0.207);
+			font-size: 0.875rem;
+			background-color: $pink;
+			color: white;
+		}
+	}
+	.company-logo {
+		width: 90%;
+		margin: 0rem auto 2rem auto;
+		path {
+			fill: white;
+		}
+	}
+
+	&__flex {
+		@include desktop {
+			display: flex;
+			width: 90%;
+			margin: auto;
+			align-items: flex-start;
+		}
+		&__contact {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 14.375rem;
+			width: 90%;
+			margin: auto;
+
+			span {
+				color: $paleCyan;
+				font-size: 1.125rem;
+			}
+
+			div {
+				display: flex;
+				align-items: flex-start;
+
+				svg {
+					width: 3.1875rem;
+					position: relative;
+					z-index: 2;
+					transform: translateY(0.3125rem);
+				}
+
+				span {
+					text-align: left;
+					width: 83%;
+					line-height: 1.5;
+				}
+			}
+		}
+
+		&__links {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin: 3.75rem auto 0rem auto;
+
+			@include desktop {
+				flex-direction: row;
+				margin: 0rem 0rem 0rem auto;
+				width: 35%;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+
+				@include desktop {
+					margin-right: 3.125rem;
+				}
+
+				a {
+					text-decoration: none;
+					color: $paleCyan;
+					font-size: 1.25rem;
+					font-weight: 400;
+					padding: 0.9375rem 0rem;
+
+					@include desktop {
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+
+					&:first-child {
+						@include desktop {
+							padding-top: 0rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

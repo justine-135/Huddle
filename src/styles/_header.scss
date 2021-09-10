@@ -1,0 +1,175 @@
+.header-bg {
+	position: relative;
+	height: 54.4375rem;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	background-color: $paleCyan;
+
+	@include desktop {
+		height: 45rem;
+	}
+
+	button {
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+	}
+
+	&__navbar {
+		position: relative;
+		display: flex;
+		width: 90%;
+		margin: auto;
+		padding-top: 1.8125rem;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 1;
+
+		@include desktop {
+			padding-top: 2.75rem;
+		}
+
+		.logo {
+			height: 1.3125rem;
+			width: 7.875rem;
+			background-image: url("../images/logo.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			@include desktop {
+				width: 12.875rem;
+				height: 2.1875rem;
+			}
+		}
+
+		button {
+			height: 1.875rem;
+			width: 7.25rem;
+			border-radius: 1.875rem;
+			background-color: white;
+			color: $darkCyan;
+			border: none;
+			box-shadow: 0rem 0rem 0.625rem rgba(128, 128, 128, 0.207);
+			text-transform: capitalize;
+			font-size: 0.875rem;
+
+			@include desktop {
+				width: 12.875rem;
+				height: 3.375rem;
+			}
+		}
+	}
+
+	&__hero {
+		@include desktop {
+			display: grid;
+			align-items: center;
+			grid-template-columns: 45% auto;
+			grid-template-rows: auto;
+			width: 90%;
+			margin: 3.75rem auto 0rem auto;
+			height: 30.5625rem;
+		}
+		&__message {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 21.125rem;
+			width: 90%;
+			margin: 6.625rem auto 0rem auto;
+			text-align: center;
+			z-index: 1;
+
+			@include desktop {
+				text-align: left;
+				align-items: flex-start;
+				margin: 0rem 0rem 0rem 0rem;
+				height: auto;
+				width: 100%;
+			}
+
+			h1 {
+				font-size: 1.75rem;
+				width: 90%;
+				margin: 0rem auto 0rem auto;
+
+				@include desktop {
+					margin: 0;
+					font-size: 2.875rem;
+				}
+			}
+
+			p {
+				margin: auto 0rem;
+				font-family: "Open Sans", sans-serif;
+				font-size: 1.125rem;
+				font-weight: 400;
+				width: 84%;
+				line-height: 1.5;
+				color: $darkCyan;
+
+				@include desktop {
+					width: 90%;
+					font-size: 1.125rem;
+					padding: 2.5625rem 0rem;
+				}
+			}
+
+			button {
+				height: 3rem;
+				width: 18.0625rem;
+				border-radius: 1.875rem;
+				border: none;
+				box-shadow: 0rem 0rem 0.625rem rgba(128, 128, 128, 0.207);
+				font-size: 0.875rem;
+				background-color: $pink;
+				color: white;
+			}
+		}
+
+		&__mockup {
+			background-image: url("../images/illustration-mockups.svg");
+			height: 15.9375rem;
+			width: 22.4375rem;
+			margin: 4.0625rem auto 0rem auto;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+
+			@include desktop {
+				position: relative;
+				height: 100%;
+				width: 100%;
+
+				max-width: 43.0625rem;
+				max-height: 30.5625rem;
+				margin: 0rem 0rem 0rem auto;
+				z-index: 2;
+			}
+		}
+	}
+
+	&__m-hero {
+		position: absolute;
+		top: 0%;
+		right: 0%;
+		z-index: 0;
+
+		@include desktop {
+			display: none;
+		}
+	}
+
+	&__d-hero {
+		display: none;
+
+		@include desktop {
+			display: block;
+			position: absolute;
+			top: 0%;
+			right: 0%;
+			z-index: 0;
+		}
+	}
+}
