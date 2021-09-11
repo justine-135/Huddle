@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Huddle/static/css/main.b967bf2c.chunk.css",
+    "main.js": "/Huddle/static/js/main.fae5c2a9.chunk.js",
+    "main.js.map": "/Huddle/static/js/main.fae5c2a9.chunk.js.map",
+    "runtime-main.js": "/Huddle/static/js/runtime-main.b0b92e6d.js",
+    "runtime-main.js.map": "/Huddle/static/js/runtime-main.b0b92e6d.js.map",
+    "static/js/2.adb01050.chunk.js": "/Huddle/static/js/2.adb01050.chunk.js",
+    "static/js/2.adb01050.chunk.js.map": "/Huddle/static/js/2.adb01050.chunk.js.map",
+    "index.html": "/Huddle/index.html",
+    "static/css/main.b967bf2c.chunk.css.map": "/Huddle/static/css/main.b967bf2c.chunk.css.map",
+    "static/js/2.adb01050.chunk.js.LICENSE.txt": "/Huddle/static/js/2.adb01050.chunk.js.LICENSE.txt",
+    "static/media/bg-hero-desktop.6f368128.svg": "/Huddle/static/media/bg-hero-desktop.6f368128.svg",
+    "static/media/bg-hero-mobile.fa71e99a.svg": "/Huddle/static/media/bg-hero-mobile.fa71e99a.svg",
+    "static/media/icon-email.19ab894b.svg": "/Huddle/static/media/icon-email.19ab894b.svg",
+    "static/media/icon-location.a681f02d.svg": "/Huddle/static/media/icon-location.a681f02d.svg",
+    "static/media/icon-phone.43c05d1a.svg": "/Huddle/static/media/icon-phone.43c05d1a.svg",
+    "static/media/style.css": "/Huddle/static/media/logo.3c5a8544.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0b92e6d.js",
+    "static/js/2.adb01050.chunk.js",
+    "static/css/main.b967bf2c.chunk.css",
+    "static/js/main.fae5c2a9.chunk.js"
+  ]
+}
